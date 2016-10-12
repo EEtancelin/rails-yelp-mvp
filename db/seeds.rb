@@ -8,9 +8,11 @@
 
 restaurant_seed = [{name: "La belle étoile", adress:"Galaxie", phone_number: "0101", category:"french"},
                   {name: "Chez Cousteau", adress:"En mer", phone_number: "0202", category:"chinese"},
-                  {name: "La montagne", adress:"Alpes", phone_number: "0303", category:"italian"}]
+                  {name: "La montagne", adress:"Alpes", phone_number: "0303", category:"italian"},
+                  {name: "Le bon chien", adress: "Alpes", phone_number: "0303", category:"chinese"}
+                ]
 
 
 
-restaurants = Restaurant.create(restaurant_seed);
+restaurants = Restaurant.create!(restaurant_seed);
 
